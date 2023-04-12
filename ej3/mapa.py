@@ -76,7 +76,7 @@ class Mapa:
             
     def laser_process(self,msg):
         # Transforma desde la codificacion del mapa a un arreglo de float
-        D={'l':0.0,'p':1.0,'c':0.5,'s':1000.0,'i':-1.0}
+        D={'l':0.0,'p':1.0,'c':2.0,'s':1000.0,'i':-1.0}
         data=sensor_rango_msg()
         for i in msg:
             data.echoes.append(D[i])
